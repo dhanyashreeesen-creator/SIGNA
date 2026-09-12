@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGNA — AI-Powered Document Intelligence & Verification Platform</title>
+  <meta name="description" content="Signa combines OCR, computer vision, and machine learning to analyze documents, extract information, and detect potential inconsistencies before human review.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. MARKETING WEBSITE VIEW
+       ======================================================================== -->
+  <div id="marketing-view">
+    
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow" style="top: -150px; left: 10%;"></div>
+    <div class="ambient-glow" style="top: 800px; right: 5%;"></div>
+    <div class="ambient-glow" style="top: 2200px; left: 5%;"></div>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="#hero" class="brand-logo">
+          <div class="logo-symbol">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <span>SIGNA</span>
+        </a>
+
+        <nav>
+          <ul class="nav-menu" id="main-nav-menu">
+            <li><a href="#solutions" class="nav-link">Solutions</a></li>
+            <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            <li><a href="#technology" class="nav-link">Technology</a></li>
+            <li><a href="#industries" class="nav-link">Industries</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary btn-sm btn-launch-app">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+              <polyline points="10 17 15 12 10 7"/>
+              <line x1="15" y1="12" x2="3" y2="12"/>
+            </svg>
+            <span>Sign In</span>
+          </button>
+          <button class="btn btn-gradient btn-sm btn-launch-app">
+            <span>Launch Live MVP</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+          <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section (PRD Section 1, 11.1, 16) -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>AI / DeepTech SaaS Platform • Early Stage MVP</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Trust what you <span class="gradient-text">verify.</span>
+            </h1>
+
+            <p class="hero-desc">
+              AI-powered document intelligence for faster, smarter verification. Signa combines 
+              <strong>OCR</strong>, <strong>computer vision</strong>, and <strong>machine learning</strong> 
+              to provide an intelligent first layer of document analysis before human decision-making.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn btn-gradient btn-lg btn-launch-app">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+                <span>Launch Interactive Demo</span>
+              </button>
+              <a href="#how-it-works" class="btn btn-secondary btn-lg">
+                Explore Signa
+              </a>
+            </div>
+
+            <div class="hero-trust-proof">
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Upload. Analyze. Verify.</span>
+              </div>
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Tampering & Anomaly Detection</span>
+              </div>
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Risk Scoring (0–100)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Interactive Simulation Card -->
+          <div class="hero-preview-card">
+            <div class="preview-card-header">
+              <div class="preview-doc-meta">
+                <div class="doc-icon-pill">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="font-size: 0.95rem; font-weight: 700;">degree_abc_university.pdf</h4>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">SGN-20481 • Educational Credential</span>
+                </div>
+              </div>
+              <span class="preview-badge-status high">High Risk (78/100)</span>
+            </div>
+
+            <div class="preview-simulated-scan">
+              <div class="scan-beam"></div>
+              <div class="sim-doc-header"></div>
+              <div class="sim-doc-line w-80"></div>
+              <div class="sim-doc-line w-60"></div>
+              
+              <div class="sim-highlight-box">
+                <span>■ Date formatting anomaly: Font mismatch detected</span>
+                <span style="font-size: 0.7rem; color: #dc2626; font-weight: 800;">+1.8px Kerning</span>
+              </div>
+
+              <div class="sim-doc-line w-60"></div>
+              <div class="sim-doc-line w-40"></div>
+            </div>
+
+            <div class="preview-stats-bar">
+              <div class="mini-stat-item">
+                <div class="mini-stat-label">STATUS</div>
+                <div class="mini-stat-val" style="color: var(--risk-high); font-size: 0.85rem;">Review Req.</div>
+              </div>
+              <div class="mini-stat-item">
+                <div class="mini-stat-label">RISK SCORE</div>
+                <div class="mini-stat-val" style="color: var(--risk-high);">78 / 100</div>
+              </div>
+              <div class="mini-stat-item">
+                <div class="mini-stat-label">OCR FIELDS</div>
+                <div class="mini-stat-val" style="color: var(--risk-low);">5 Extracted</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; text-align: center;">
+              <button class="btn btn-outline btn-sm btn-launch-app" style="width: 100%;">
+                Open in Verification Studio →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Banner -->
+    <section class="metrics-strip">
+      <div class="container">
+        <div class="metrics-strip-grid">
+          <div class="metric-cell">
+            <h3 class="gradient-text">1,248+</h3>
+            <p>Documents Analyzed</p>
+          </div>
+          <div class="metric-cell">
+            <h3 style="color: var(--risk-low);">942</h3>
+            <p>Low Risk Passed</p>
+          </div>
+          <div class="metric-cell">
+            <h3 style="color: var(--risk-mod);">231</h3>
+            <p>Moderate Flags</p>
+          </div>
+          <div class="metric-cell">
+            <h3 style="color: var(--risk-high);">75</h3>
+            <p>High Risk Anomalies Caught</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statement (PRD Section 2) -->
+    <section class="section-problem" id="problem">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">The Challenge</span>
+          <h2 class="section-title">Manual Document Verification Is Broken</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Organizations process thousands of high-stakes documents every day. Manual inspection 
+            creates massive operational bottlenecks and easily misses sophisticated digital alterations.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Negative Side: Manual Checking -->
+          <div class="comparison-card negative">
+            <div class="comp-header">
+              <div class="comp-badge danger">✕</div>
+              <h3 class="comp-title">The Manual Verification Bottleneck</h3>
+            </div>
+            <ul class="comp-list danger">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="15" y1="9" x2="9" y2="15"/>
+                  <line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+                <span><strong>Time-consuming & repetitive:</strong> Officers spend up to 25 minutes inspecting font baselines, seals, and dates manually.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="15" y1="9" x2="9" y2="15"/>
+                  <line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+                <span><strong>Prone to human error:</strong> Subtle pixel alterations, font substitutions, and mathematical mismatches slip past tired reviewers.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="15" y1="9" x2="9" y2="15"/>
+                  <line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+                <span><strong>Difficult to scale:</strong> Increasing file volume requires exponentially larger compliance teams without increasing accuracy.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="15" y1="9" x2="9" y2="15"/>
+                  <line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+                <span><strong>Undetected tampering:</strong> Modern PDF editing tools produce visual counterfeits that deceive the naked eye.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Positive Side: The Signa First Layer -->
+          <div class="comparison-card positive">
+            <div class="comp-header">
+              <div class="comp-badge success">✓</div>
+              <h3 class="comp-title">The Signa Intelligent First Layer</h3>
+            </div>
+            <ul class="comp-list success">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Instant OCR & Data Extraction:</strong> Extracts name, ID number, dates, and organizations automatically in seconds.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Deep Anomaly & Alteration Highlighting:</strong> Visually highlights suspicious regions, font kerning mismatches, and compression boundaries.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Calibrated Signa Risk Score (0–100):</strong> Ranks files as Low, Moderate, or High Risk to prioritize officer queues.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Human-in-the-Loop Architecture:</strong> Provides AI-assisted indicators so human decision-makers make faster, higher-confidence calls.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works (PRD Section 11.2) -->
+    <section class="section-how" id="how-it-works">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">Workflow</span>
+          <h2 class="section-title">How Signa Works</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            A simple three-step verification pipeline designed for non-technical operations teams.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Upload</h3>
+            <p>
+              Upload documents seamlessly via drag & drop or file browse. Supports PDF documents, 
+              high-resolution JPG, and PNG images across multiple document types.
+            </p>
+            <div class="step-meta-tag">Supported: PDF • JPG • PNG</div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Analyze</h3>
+            <p>
+              Signa's AI examines text, layout structure, typography, numerical alignments, 
+              and image compression blocks to identify hidden irregularities and extract key fields.
+            </p>
+            <div class="step-meta-tag">OCR • Computer Vision • ML</div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Review</h3>
+            <p>
+              Receive structured insights, visual anomaly overlays, and an actionable 0–100 Signa 
+              Risk Score with an exportable verification report for compliance sign-off.
+            </p>
+            <div class="step-meta-tag">Report • Risk Score • Audit Trail</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions (PRD Section 11.3) -->
+    <section class="section-solutions" id="solutions">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 class="section-title">Built for Real Verification Workflows</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Signa provides modular intelligence modules to automate repetitive checks and surface critical risks.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solution 1 -->
+          <div class="solution-card">
+            <div class="solution-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <path d="M9 15l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Document Verification</h3>
+            <p>
+              Identify structural discrepancies, issuer inconsistencies, and layout irregularities across credentials, contracts, and certifications.
+            </p>
+            <ul class="solution-points">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Validates standard document geometry & templates</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Spots missing mandatory legal clauses or metadata headers</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Solution 2 -->
+          <div class="solution-card">
+            <div class="solution-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M7 7h10"/>
+                <path d="M7 12h10"/>
+                <path d="M7 17h6"/>
+              </svg>
+            </div>
+            <h3>Information Extraction</h3>
+            <p>
+              Automatically extract names, identification numbers, conferral dates, organization credentials, and expiry limits without manual typing.
+            </p>
+            <ul class="solution-points">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>High-precision OCR with multi-font normalization</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Direct structured output (JSON, CSV, ERP API ready)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Solution 3 -->
+          <div class="solution-card">
+            <div class="solution-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>Anomaly Detection</h3>
+            <p>
+              The flagship intelligence layer. Visually highlights suspicious regions, spliced dates, replaced photos, and localized compression anomalies.
+            </p>
+            <ul class="solution-points">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive glowing bounding boxes on altered coordinates</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Detects subtle baseline font shifts and kerning alterations</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Solution 4 -->
+          <div class="solution-card">
+            <div class="solution-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Risk Assessment</h3>
+            <p>
+              Replace binary "fake/real" assumptions with a balanced 0–100 risk score that prioritizes borderline cases for human verification.
+            </p>
+            <ul class="solution-points">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Categories: Low Risk, Moderate Risk, and High Risk</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Actionable recommendations for compliance review teams</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Deep-Dive (PRD Section 11.4) -->
+    <section class="section-tech" id="technology">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">Under The Hood</span>
+          <h2 class="section-title">Powered by Intelligent Document Analysis</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Grounding cutting-edge deep tech in practical, verifiable computer science.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-badge">Optical Engine</div>
+            <h3>OCR (Optical Character Recognition)</h3>
+            <p>
+              Multi-scale text recognition extracts textual values, character positions, and spatial bounding boxes across typed, printed, and machine-encoded documents.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-badge">Visual Layer</div>
+            <h3>Computer Vision</h3>
+            <p>
+              Analyzes spatial document geometry, logo alignments, stamp boundaries, and localized Discrete Cosine Transform (DCT) compression artifacts.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-badge">Inference Engine</div>
+            <h3>Machine Learning</h3>
+            <p>
+              Evaluates statistical patterns against verified issuance templates to identify anomalies, baseline drift, and atypical field combinations.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4-Stage Pipeline Flow Diagram -->
+        <div class="tech-pipeline-box">
+          <h4>The Signa 4-Stage Verification Pipeline</h4>
+          <div class="pipeline-steps-flow">
+            <div class="pipeline-node">
+              <div class="node-step">STAGE 1</div>
+              <div class="node-title">Ingest & Clean</div>
+              <div class="node-desc">Format normalization, DPI scaling & skew correction</div>
+            </div>
+            <div class="pipeline-node">
+              <div class="node-step">STAGE 2</div>
+              <div class="node-title">OCR & Layout</div>
+              <div class="node-desc">Text mapping, tabular parsing & coordinate mapping</div>
+            </div>
+            <div class="pipeline-node">
+              <div class="node-step">STAGE 3</div>
+              <div class="node-title">Anomaly Scanner</div>
+              <div class="node-desc">Font kerning audit, compression noise & seal integrity</div>
+            </div>
+            <div class="pipeline-node">
+              <div class="node-step">STAGE 4</div>
+              <div class="node-title">Score & Report</div>
+              <div class="node-desc">Weighted risk scoring (0-100) & human review report</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries (PRD Section 11.5) -->
+    <section class="section-industries" id="industries">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <span class="section-tag">Target Markets</span>
+          <h2 class="section-title">Engineered for Document-Heavy Industries</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Explore how Signa adapts to specific domain verification requirements.
+          </p>
+        </div>
+
+        <!-- Industry Tabs Nav -->
+        <div class="industry-tabs-nav">
+          <button class="industry-tab-btn active" data-industry="finance">Finance</button>
+          <button class="industry-tab-btn" data-industry="education">Education</button>
+          <button class="industry-tab-btn" data-industry="insurance">Insurance</button>
+          <button class="industry-tab-btn" data-industry="government">Government</button>
+          <button class="industry-tab-btn" data-industry="legal">Legal</button>
+          <button class="industry-tab-btn" data-industry="enterprise">Enterprise</button>
+        </div>
+
+        <!-- Dynamic Industry Container (populated via JS) -->
+        <div class="industry-detail-card" id="industry-detail-container">
+          <div class="ind-info">
+            <span class="section-tag">Finance Benchmark</span>
+            <h3>Banking & Financial Institutions</h3>
+            <p>
+              Accelerate corporate loan underwriting, know-your-customer (KYC) onboarding, and cross-border trade finance by verifying invoices, tax filings, and bank statements in seconds.
+            </p>
+            <ul class="ind-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Detect manipulated numbers, irregular font weights, and altered financial statements</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated balance & line-item mathematical reconciliations</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Reduce mortgage processing cycle times from 4 days to 45 minutes</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ind-badge-preview">
+            <div class="solution-icon-wrap" style="margin: 0 auto 1rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4>Enterprise Verification Shield</h4>
+            <p>Processed 240,000+ financial ledgers with 99.4% OCR precision</p>
+            <button class="btn btn-primary btn-sm btn-launch-app">
+              Test Industry Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us & Responsible AI (PRD Section 4, 11.6, 15, 16) -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">About Signa</span>
+          <h2 class="section-title">Our Vision & Team</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Signa aims to make document verification faster, more accessible, and more intelligent by combining AI with human decision-making.
+          </p>
+        </div>
+
+        <!-- Responsible AI Card: What Signa Is NOT (PRD Section 4) -->
+        <div class="disclaimer-card">
+          <div class="disclaimer-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+          </div>
+          <div class="disclaimer-content">
+            <h3>What Signa Is NOT — Our Responsible AI Commitment</h3>
+            <p>
+              Signa does <strong>not</strong> claim to make a final legal determination that a document is genuine or fraudulent. 
+              Instead, Signa provides <strong>AI-assisted analysis and risk indicators for human review</strong>. 
+              This foundational principle ensures compliance officers maintain final accountability while gaining superhuman detection speed.
+            </p>
+          </div>
+        </div>
+
+        <!-- Organization Fit (PRD Section 15) -->
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center;">
+            The Signa Team Structure
+          </h3>
+          <p style="color: var(--text-secondary); text-align: center; font-size: 0.95rem; margin-bottom: 2rem;">
+            A purpose-driven team where every discipline reinforces platform integrity.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-dept">Product & Technology</div>
+            <h4>Engineering & AI</h4>
+            <ul class="team-roles">
+              <li>5 Software Developers</li>
+              <li>1 AI / ML Engineer</li>
+              <li>1 UX / Interaction Designer</li>
+            </ul>
+          </div>
+
+          <div class="team-card">
+            <div class="team-dept">Business Strategy</div>
+            <h4>Commercial Growth</h4>
+            <ul class="team-roles">
+              <li>1 Marketing Manager</li>
+              <li>1 Finance & Accounts Manager</li>
+            </ul>
+          </div>
+
+          <div class="team-card">
+            <div class="team-dept">Operations</div>
+            <h4>Customer Success</h4>
+            <ul class="team-roles">
+              <li>1 HR & People Manager</li>
+              <li>1 Customer Service Specialist</li>
+            </ul>
+          </div>
+
+          <div class="team-card">
+            <div class="team-dept">Trust & Compliance</div>
+            <h4>Security</h4>
+            <ul class="team-roles">
+              <li>1 Cybersecurity Specialist</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Roadmap (PRD Section 13) -->
+    <section class="section-roadmap" id="roadmap">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag">Product Roadmap</span>
+          <h2 class="section-title">Beyond the MVP</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Planned future capabilities currently in research and development.
+          </p>
+        </div>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 2</span>
+            <h4>Real-time Document Verification</h4>
+            <p>Sub-second edge verification for live mobile camera streams and web onboarding checkouts.</p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 2</span>
+            <h4>Multiple-Language OCR</h4>
+            <p>Universal multi-alphabet character recognition supporting Cyrillic, Arabic, Hanzi, and Devanagari scripts.</p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 2</span>
+            <h4>Organization-Specific AI Models</h4>
+            <p>Fine-tuned custom neural classifiers trained exclusively on proprietary institutional templates.</p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 3</span>
+            <h4>Enterprise REST API Integration</h4>
+            <p>Direct SDKs and webhooks for integration into Salesforce, Core Banking, and HRIS systems.</p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 3</span>
+            <h4>Batch Document Processing</h4>
+            <p>Asynchronous multi-thousand document ingestion queues with parallel cloud worker nodes.</p>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="roadmap-tag">Phase 3</span>
+            <h4>Advanced Tampering Detection</h4>
+            <p>Deep neural frequency-domain analysis to expose generative AI diffusion inpainting counterfeits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Lead Gen Form (PRD Section 11.7) -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <span class="section-tag">Get Started</span>
+            <h2>Talk to Signa</h2>
+            <p>
+              Ready to automate document checking and detect irregularities before they impact your business? 
+              Connect with our solutions team for a customized enterprise pilot.
+            </p>
+            <ul class="contact-perks">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Free document verification audit on 50 sample files</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Full access to the interactive verification console</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dedicated deployment guidance from our engineering team</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="signa-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Work Email *</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="sarah@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-org">Organization *</label>
+                  <input type="text" id="contact-org" class="form-input" placeholder="e.g. Apex Financial Group" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-industry">Industry *</label>
+                  <select id="contact-industry" class="form-select" required>
+                    <option value="Finance">Banking & Financial Institutions</option>
+                    <option value="Education">Educational Institutions</option>
+                    <option value="Insurance">Insurance Companies</option>
+                    <option value="Government">Government Organizations</option>
+                    <option value="Legal">Legal & Documentation Firms</option>
+                    <option value="Recruitment">Recruitment & Staffing</option>
+                    <option value="Enterprise">Enterprise Operations</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-msg">Verification Use Case / Message</label>
+                <textarea id="contact-msg" class="form-textarea" placeholder="Tell us about the documents you verify and your current monthly volume..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gradient btn-lg" style="width: 100%;">
+                <span>Talk to Signa</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="brand-logo" style="margin-bottom: 0.5rem;">
+              <div class="logo-symbol">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <span>SIGNA</span>
+            </a>
+            <p>
+              AI-powered document intelligence & verification platform. Upload. Analyze. Verify.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Product</h5>
+            <ul class="footer-links">
+              <li><a href="#solutions">Document Verification</a></li>
+              <li><a href="#solutions">OCR Extraction</a></li>
+              <li><a href="#solutions">Anomaly Detection</a></li>
+              <li><a href="#solutions">Risk Scoring</a></li>
+              <li><a href="#" class="btn-launch-app">Live MVP Demo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Industries</h5>
+            <ul class="footer-links">
+              <li><a href="#industries">Banking & Finance</a></li>
+              <li><a href="#industries">Higher Education</a></li>
+              <li><a href="#industries">Insurance Claims</a></li>
+              <li><a href="#industries">Government Services</a></li>
+              <li><a href="#industries">Legal Diligence</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Company & Trust</h5>
+            <ul class="footer-links">
+              <li><a href="#about">About Signa</a></li>
+              <li><a href="#about">Organization Fit</a></li>
+              <li><a href="#about">Responsible AI</a></li>
+              <li><a href="#contact">Contact Team</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 SIGNA Technologies. All rights reserved. Early-Stage DeepTech SaaS MVP.</div>
+          <div style="display: flex; gap: 1.5rem;">
+            <span>SOC2 Type II Ready</span>
+            <span>256-Bit TLS Encryption</span>
+            <span>GDPR Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- ========================================================================
+       2. INTERACTIVE MVP WEB APPLICATION / DASHBOARD PORTAL
+       ======================================================================== -->
+  <div id="app-view" class="app-container">
+    
+    <!-- App Topbar (PRD Section 3, 9) -->
+    <header class="app-topbar">
+      <div class="app-brand">
+        <a href="#" class="brand-logo btn-return-marketing">
+          <div class="logo-symbol">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <span>SIGNA</span>
+        </a>
+
+        <!-- Role Switcher (PRD Section 3) -->
+        <div class="role-switcher-badge">
+          <span style="color: var(--text-muted); font-size: 0.75rem;">ACTIVE ROLE:</span>
+          <select id="user-role-select" class="role-select">
+            <option value="officer">Document Verification Officer</option>
+            <option value="risk">Compliance / Risk Team</option>
+            <option value="admin">Business Administrator</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="app-actions">
+        <span id="role-permission-badge" class="section-tag" style="margin-bottom: 0; font-size: 0.7rem;">
+          Upload & Review Mode
+        </span>
+        <button class="btn btn-secondary btn-sm btn-return-marketing">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"/>
+            <polyline points="12 19 5 12 12 5"/>
+          </svg>
+          <span>Exit to Website</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Subnav Tabs -->
+    <div class="app-subnav">
+      <div class="subnav-tabs">
+        <button class="subnav-tab active" data-tab="analyzer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          <span>Document Analyzer</span>
+        </button>
+        <button class="subnav-tab" data-tab="dashboard">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="9"/>
+            <rect x="14" y="3" width="7" height="5"/>
+            <rect x="14" y="12" width="7" height="9"/>
+            <rect x="3" y="16" width="7" height="5"/>
+          </svg>
+          <span>Dashboard & Activity</span>
+        </button>
+      </div>
+
+      <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+        ENV: MVP-SANDBOX-LIVE
+      </div>
+    </div>
+
+    <!-- App Body Content -->
+    <main class="app-body">
+      
+      <!-- TAB 1: DOCUMENT ANALYZER (PRD Section 5, 6, 7, 8, 12, 14) -->
+      <section id="app-tab-analyzer">
+        
+        <!-- Upload Studio Panel (PRD Section 5.1) -->
+        <div class="studio-upload-panel">
+          <div class="dropzone-area" id="analyzer-dropzone">
+            <div class="dropzone-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="dropzone-title">Drag & Drop your document here</h3>
+            <p class="dropzone-sub">Supports PDF, JPG, PNG up to 25 MB • Or browse from local disk</p>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('doc-file-input').click()">
+              Browse Files
+            </button>
+            <input type="file" id="doc-file-input" style="display: none;" accept=".pdf,.jpg,.jpeg,.png">
+          </div>
+
+          <!-- Instant Interactive Test Presets -->
+          <div class="demo-presets-row">
+            <div class="demo-presets-title">⚡ Instant Test Documents:</div>
+            <div class="demo-btn-group">
+              <button class="preset-chip-btn active" data-sample="degree">
+                <span style="color: var(--risk-high);">●</span>
+                <span>Sample 1: Degree Certificate (High Risk / Tampered)</span>
+              </button>
+              <button class="preset-chip-btn" data-sample="invoice">
+                <span style="color: var(--risk-low);">●</span>
+                <span>Sample 2: Corporate Invoice (Low Risk / Valid)</span>
+              </button>
+              <button class="preset-chip-btn" data-sample="identity">
+                <span style="color: var(--risk-mod);">●</span>
+                <span>Sample 3: National Citizen ID (Moderate / Expired)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Processing Feedback Overlay (PRD Section 14: Analyzing document... 67%) -->
+        <div class="processing-overlay-card" id="processing-overlay">
+          <div class="processing-spinner-box">
+            <div class="progress-feedback-text" id="analysis-progress-text">Analyzing document... 67%</div>
+            <div class="progress-track">
+              <div class="progress-fill" id="analysis-progress-fill"></div>
+            </div>
+            <div class="progress-substage" id="analysis-progress-sub">Checking baseline drift and discrete cosine compression</div>
+          </div>
+        </div>
+
+        <!-- Dual-Pane Inspection View (PRD Sections 5.3, 6, 7, 8) -->
+        <div class="studio-inspection-grid" id="studio-inspection-view">
+          
+          <!-- LEFT PANE: Document Canvas with Interactive Bounding Boxes (PRD Section 6) -->
+          <div class="document-canvas-card">
+            <div class="canvas-toolbar">
+              <div class="canvas-title-group">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <h4 id="inspector-doc-title">University Degree Certificate</h4>
+              </div>
+              <div class="canvas-controls">
+                <span style="font-size: 0.75rem; color: var(--text-muted); margin-right: 0.5rem;">Click box to inspect</span>
+                <button class="canvas-ctrl-btn" title="Toggle Bounding Boxes" onclick="document.getElementById('bounding-box-overlay').classList.toggle('hidden')">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Viewport with SVG rendering and overlay boxes -->
+            <div class="doc-viewport" id="document-viewport-container">
+              <div id="document-viewport"></div>
+              <div class="bounding-box-overlay" id="bounding-box-overlay"></div>
+            </div>
+
+            <div style="margin-top: 0.85rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-muted);">
+              <span id="inspector-doc-sub">DOC-1023 • SGN-20481 • Uploaded Today</span>
+              <div style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--risk-high);">■ Anomaly</span>
+                <span style="color: var(--risk-mod);">■ Warning</span>
+                <span style="color: var(--risk-low);">■ Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT PANE: Analysis Results, Score Gauge, OCR Table & Actions (PRD Sections 7, 8) -->
+          <div class="analysis-details-card">
+            
+            <!-- Document Status Header -->
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
+                SIGNA ANALYSIS REPORT
+              </span>
+              <span id="inspector-status-badge" class="badge-risk high">Review Recommended</span>
+            </div>
+
+            <!-- Signa Risk Score Gauge (PRD Section 7) -->
+            <div class="risk-score-banner">
+              <div class="score-gauge-wrap">
+                <div class="circular-gauge">
+                  <svg class="gauge-svg" viewBox="0 0 80 80">
+                    <circle class="gauge-track" cx="40" cy="40" r="34"/>
+                    <circle class="gauge-fill high" id="risk-gauge-circle" cx="40" cy="40" r="34"/>
+                  </svg>
+                  <div class="gauge-text" id="risk-score-number">78</div>
+                </div>
+                <div class="risk-meta-info">
+                  <h5>Signa Risk Score</h5>
+                  <div class="risk-category-badge high" id="risk-score-category">High Risk</div>
+                </div>
+              </div>
+              <div style="text-align: right; max-width: 140px; font-size: 0.75rem; color: var(--text-muted);">
+                AI-assisted risk score based on multi-factor heuristics.
+              </div>
+            </div>
+
+            <!-- OCR & Extracted Information (PRD Section 5.3) -->
+            <div class="ocr-data-section">
+              <h4>
+                <span>Extracted Information (OCR)</span>
+                <span style="font-size: 0.75rem; color: var(--accent-cyan); font-weight: 500;">Auto-Parsed</span>
+              </h4>
+              <table class="ocr-table">
+                <tbody id="ocr-table-body">
+                  <!-- Populated dynamically via JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Detected Anomaly Indicators (PRD Section 6) -->
+            <div class="indicators-section">
+              <h4>Detected Irregularities & Indicators</h4>
+              <div class="indicators-list" id="indicators-list-container">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+
+            <!-- Recommendation Box (PRD Section 8) -->
+            <div class="recommendation-box">
+              <h5>Official Recommendation</h5>
+              <p id="recommendation-text">
+                Manual verification recommended. Potential digital alteration detected on conferral date and seal.
+              </p>
+            </div>
+
+            <!-- Verification Decision Actions (PRD Section 3, 8) -->
+            <div class="verification-actions-bar">
+              <button class="btn btn-approve btn-sm" id="btn-action-approve" title="Mark Document Verified">
+                ✓ Mark Verified
+              </button>
+              <button class="btn btn-flag btn-sm" id="btn-action-flag" title="Flag for Secondary Risk Review">
+                ⚠ Flag For Review
+              </button>
+              <button class="btn btn-reject btn-sm" id="btn-action-reject" title="Reject Document">
+                ✕ Reject Document
+              </button>
+              <button class="btn btn-secondary btn-sm" id="btn-action-export" style="margin-left: auto;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download Report</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: EXECUTIVE DASHBOARD & RECENT ACTIVITY (PRD Section 9) -->
+      <section id="app-tab-dashboard" style="display: none;">
+        
+        <!-- KPI Stat Metrics Grid (PRD Section 9) -->
+        <div class="dashboard-metrics-grid">
+          <div class="dash-kpi-card analyzed">
+            <div class="kpi-header">
+              <span class="kpi-title">Documents Analyzed</span>
+              <div class="kpi-icon">📊</div>
+            </div>
+            <div class="kpi-value" id="metric-analyzed-val">1,248</div>
+            <div class="kpi-subtext">+12.4% vs last period</div>
+          </div>
+
+          <div class="dash-kpi-card low">
+            <div class="kpi-header">
+              <span class="kpi-title">Low Risk</span>
+              <div class="kpi-icon">✓</div>
+            </div>
+            <div class="kpi-value" id="metric-low-val" style="color: var(--risk-low);">942</div>
+            <div class="kpi-subtext">75.5% eligible for straight-through approval</div>
+          </div>
+
+          <div class="dash-kpi-card moderate">
+            <div class="kpi-header">
+              <span class="kpi-title">Moderate Risk</span>
+              <div class="kpi-icon">⚠</div>
+            </div>
+            <div class="kpi-value" id="metric-mod-val" style="color: var(--risk-mod);">231</div>
+            <div class="kpi-subtext">18.5% flagged for secondary check</div>
+          </div>
+
+          <div class="dash-kpi-card high">
+            <div class="kpi-header">
+              <span class="kpi-title">High Risk</span>
+              <div class="kpi-icon">■</div>
+            </div>
+            <div class="kpi-value" id="metric-high-val" style="color: var(--risk-high);">75</div>
+            <div class="kpi-subtext">6.0% critical anomalies intercepted</div>
+          </div>
+        </div>
+
+        <!-- Recent Activity Table (PRD Section 9) -->
+        <div class="dash-recent-card">
+          <div class="card-title-bar">
+            <div>
+              <h3>Recent Document Activity</h3>
+              <p style="font-size: 0.825rem; color: var(--text-muted); margin-top: 2px;">
+                Live queue of processed records across all organization tenants
+              </p>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="switchAppTab('analyzer')">
+              + Upload New Document
+            </button>
+          </div>
+
+          <div class="recent-table-wrap">
+            <table class="signa-table">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th>Date</th>
+                  <th>Risk Score</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="recent-activity-tbody">
+                <!-- Dynamically populated via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- ========================================================================
+       3. VERIFICATION REPORT EXPORT MODAL (PRD Section 8)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="report-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 style="font-size: 1.15rem; font-weight: 800;">Official SIGNA Analysis Report</h3>
+        <button class="modal-close" id="report-modal-close" aria-label="Close Report">✕</button>
+      </div>
+      <div class="modal-body" id="report-modal-content">
+        <!-- Rendered dynamically via JS -->
+      </div>
+      <div style="padding: 1rem 2rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button class="btn btn-secondary btn-sm" onclick="window.print()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span>Print / Save PDF</span>
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('report-modal').classList.remove('active'); showToast('Report exported successfully', 'success');">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/sample-docs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
